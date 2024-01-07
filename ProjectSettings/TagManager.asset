@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Enemy
   - Orb
+  - Bullet
+  - SwordHitBox
+  - Chest
+  - BulletLaser
+  - BulletMagic
+  - Boss
   layers:
   - Default
   - TransparentFX

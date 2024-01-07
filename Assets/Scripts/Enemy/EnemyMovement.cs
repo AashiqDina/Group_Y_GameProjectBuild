@@ -7,12 +7,15 @@ public class EnemyMovement : MonoBehaviour
     public NavMeshAgent agent;
     public Transform playerLocation;
 
+
     // Start is called before the first frame update
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         agent.SetDestination(playerLocation.position);
     }
+
+
 }

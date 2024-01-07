@@ -47,12 +47,21 @@ public partial class @Input: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Jump"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""57a40cf7-5940-41b5-8eb5-9ec8200ada23"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Analog"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Run"",
+                    ""type"": ""Value"",
+                    ""id"": ""622efcaa-0214-405c-ba2b-94e30d983018"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @Input: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""627efdc4-30fc-483c-a57b-df06c9e137fb"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Run"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -182,6 +202,354 @@ public partial class @Input: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""GunShoot"",
+            ""id"": ""b6420e0f-0248-4ed8-a912-26cfb4aa9a57"",
+            ""actions"": [
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Value"",
+                    ""id"": ""b11c1581-6088-4d6b-8728-8843849d0228"",
+                    ""expectedControlType"": ""Analog"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""a67894a8-8194-4725-a418-5bc90f7c057e"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""SwordSwingAttack"",
+            ""id"": ""336f1adf-c78d-444a-88bf-383cea275502"",
+            ""actions"": [
+                {
+                    ""name"": ""ToAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""5df91b32-6378-4c76-a05d-be0e08270b01"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""433e4c27-8c9c-440c-a135-59a4c4929b1a"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Inventory"",
+            ""id"": ""70bda24a-2456-4a6e-a3b4-f675d9c6de91"",
+            ""actions"": [
+                {
+                    ""name"": ""OpenCloseInventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""6f21f7ab-deae-40ca-988f-64b78384874d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""017f1be9-7414-40bd-b15c-984e1b4d8cec"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenCloseInventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""QuickSwitch"",
+            ""id"": ""50f6a4b8-5ddc-4458-a28e-b5a7029d220e"",
+            ""actions"": [
+                {
+                    ""name"": ""SwitchOne"",
+                    ""type"": ""Button"",
+                    ""id"": ""4c577c39-ff1f-475d-9039-0a406940c0ee"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchTwo"",
+                    ""type"": ""Button"",
+                    ""id"": ""d285345d-3081-4e38-8868-718d68599d0c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchThree"",
+                    ""type"": ""Button"",
+                    ""id"": ""891c871f-69f7-4b20-9809-549b5ab00ec9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchFour"",
+                    ""type"": ""Button"",
+                    ""id"": ""2556f44d-9c08-48d4-8545-eb035f249d46"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchFive"",
+                    ""type"": ""Button"",
+                    ""id"": ""f6a5c942-8dcf-4df5-85da-f1582b2dfb53"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchSix"",
+                    ""type"": ""Button"",
+                    ""id"": ""6ca608e2-7d41-4908-acca-8a61850950ad"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""31ecce01-0422-4f0b-97a1-0f2fe389e74f"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchOne"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""daeea775-c564-4741-94a9-a5d18f617add"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchTwo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ec0e924-dc31-4c29-8a4c-a8d332b2d11d"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchThree"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29c01f6e-8516-4e50-bb6d-4769e62b9467"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchFour"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4f049672-1054-4259-b604-6dd89b93b164"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchSix"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dd6302db-b399-494b-8d23-32932757dea3"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchFive"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""OpenChest"",
+            ""id"": ""96211ec4-149a-4669-b260-8619dbc42127"",
+            ""actions"": [
+                {
+                    ""name"": ""Open"",
+                    ""type"": ""Button"",
+                    ""id"": ""497e3d19-25a7-42a2-9055-09e88ea01bcf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""d8e271f8-2af8-4b19-b382-0fb5c6735b96"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Open"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Pause"",
+            ""id"": ""11725cea-cfec-4daa-93b7-9b877b3c1e27"",
+            ""actions"": [
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""5effce0a-6723-45f8-a9f0-6b16eaf1bdbe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reset"",
+                    ""type"": ""Button"",
+                    ""id"": ""8419d431-3c55-48f1-9f45-45d0bd490514"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Start"",
+                    ""type"": ""Button"",
+                    ""id"": ""25f9980e-bf87-40ea-885b-55f4038458cd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""increaseDifficultyAction"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef93512c-cd1a-48ac-a436-4f76be481c96"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""decreaseDifficultyAction"",
+                    ""type"": ""Button"",
+                    ""id"": ""33e941e0-68ef-48ea-9549-f5ecf0c23c1c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""65db0ebb-a7cc-4021-9aae-88daf59f68ef"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0f57d889-c090-4bbf-bbe8-d665182112fe"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6519a7f7-17bf-4ac8-bff9-b9f092027a20"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""412735d6-3bc6-4593-9125-a480797bfb7e"",
+                    ""path"": ""<Keyboard>/="",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""increaseDifficultyAction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e57dee20-ae94-473e-bc4c-1b392ce95799"",
+                    ""path"": ""<Keyboard>/-"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""decreaseDifficultyAction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -191,10 +559,38 @@ public partial class @Input: IInputActionCollection2, IDisposable
         m_Movement_MoveX = m_Movement.FindAction("MoveX", throwIfNotFound: true);
         m_Movement_MoveZ = m_Movement.FindAction("MoveZ", throwIfNotFound: true);
         m_Movement_Jump = m_Movement.FindAction("Jump", throwIfNotFound: true);
+        m_Movement_Run = m_Movement.FindAction("Run", throwIfNotFound: true);
         // Look
         m_Look = asset.FindActionMap("Look", throwIfNotFound: true);
         m_Look_MouseX_Axis = m_Look.FindAction("MouseX_Axis", throwIfNotFound: true);
         m_Look_MouseY_Axis = m_Look.FindAction("MouseY_Axis", throwIfNotFound: true);
+        // GunShoot
+        m_GunShoot = asset.FindActionMap("GunShoot", throwIfNotFound: true);
+        m_GunShoot_Shoot = m_GunShoot.FindAction("Shoot", throwIfNotFound: true);
+        // SwordSwingAttack
+        m_SwordSwingAttack = asset.FindActionMap("SwordSwingAttack", throwIfNotFound: true);
+        m_SwordSwingAttack_ToAttack = m_SwordSwingAttack.FindAction("ToAttack", throwIfNotFound: true);
+        // Inventory
+        m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
+        m_Inventory_OpenCloseInventory = m_Inventory.FindAction("OpenCloseInventory", throwIfNotFound: true);
+        // QuickSwitch
+        m_QuickSwitch = asset.FindActionMap("QuickSwitch", throwIfNotFound: true);
+        m_QuickSwitch_SwitchOne = m_QuickSwitch.FindAction("SwitchOne", throwIfNotFound: true);
+        m_QuickSwitch_SwitchTwo = m_QuickSwitch.FindAction("SwitchTwo", throwIfNotFound: true);
+        m_QuickSwitch_SwitchThree = m_QuickSwitch.FindAction("SwitchThree", throwIfNotFound: true);
+        m_QuickSwitch_SwitchFour = m_QuickSwitch.FindAction("SwitchFour", throwIfNotFound: true);
+        m_QuickSwitch_SwitchFive = m_QuickSwitch.FindAction("SwitchFive", throwIfNotFound: true);
+        m_QuickSwitch_SwitchSix = m_QuickSwitch.FindAction("SwitchSix", throwIfNotFound: true);
+        // OpenChest
+        m_OpenChest = asset.FindActionMap("OpenChest", throwIfNotFound: true);
+        m_OpenChest_Open = m_OpenChest.FindAction("Open", throwIfNotFound: true);
+        // Pause
+        m_Pause = asset.FindActionMap("Pause", throwIfNotFound: true);
+        m_Pause_Pause = m_Pause.FindAction("Pause", throwIfNotFound: true);
+        m_Pause_Reset = m_Pause.FindAction("Reset", throwIfNotFound: true);
+        m_Pause_Start = m_Pause.FindAction("Start", throwIfNotFound: true);
+        m_Pause_increaseDifficultyAction = m_Pause.FindAction("increaseDifficultyAction", throwIfNotFound: true);
+        m_Pause_decreaseDifficultyAction = m_Pause.FindAction("decreaseDifficultyAction", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -259,6 +655,7 @@ public partial class @Input: IInputActionCollection2, IDisposable
     private readonly InputAction m_Movement_MoveX;
     private readonly InputAction m_Movement_MoveZ;
     private readonly InputAction m_Movement_Jump;
+    private readonly InputAction m_Movement_Run;
     public struct MovementActions
     {
         private @Input m_Wrapper;
@@ -266,6 +663,7 @@ public partial class @Input: IInputActionCollection2, IDisposable
         public InputAction @MoveX => m_Wrapper.m_Movement_MoveX;
         public InputAction @MoveZ => m_Wrapper.m_Movement_MoveZ;
         public InputAction @Jump => m_Wrapper.m_Movement_Jump;
+        public InputAction @Run => m_Wrapper.m_Movement_Run;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -284,6 +682,9 @@ public partial class @Input: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Run.started += instance.OnRun;
+            @Run.performed += instance.OnRun;
+            @Run.canceled += instance.OnRun;
         }
 
         private void UnregisterCallbacks(IMovementActions instance)
@@ -297,6 +698,9 @@ public partial class @Input: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Run.started -= instance.OnRun;
+            @Run.performed -= instance.OnRun;
+            @Run.canceled -= instance.OnRun;
         }
 
         public void RemoveCallbacks(IMovementActions instance)
@@ -368,15 +772,397 @@ public partial class @Input: IInputActionCollection2, IDisposable
         }
     }
     public LookActions @Look => new LookActions(this);
+
+    // GunShoot
+    private readonly InputActionMap m_GunShoot;
+    private List<IGunShootActions> m_GunShootActionsCallbackInterfaces = new List<IGunShootActions>();
+    private readonly InputAction m_GunShoot_Shoot;
+    public struct GunShootActions
+    {
+        private @Input m_Wrapper;
+        public GunShootActions(@Input wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Shoot => m_Wrapper.m_GunShoot_Shoot;
+        public InputActionMap Get() { return m_Wrapper.m_GunShoot; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GunShootActions set) { return set.Get(); }
+        public void AddCallbacks(IGunShootActions instance)
+        {
+            if (instance == null || m_Wrapper.m_GunShootActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GunShootActionsCallbackInterfaces.Add(instance);
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
+        }
+
+        private void UnregisterCallbacks(IGunShootActions instance)
+        {
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
+        }
+
+        public void RemoveCallbacks(IGunShootActions instance)
+        {
+            if (m_Wrapper.m_GunShootActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IGunShootActions instance)
+        {
+            foreach (var item in m_Wrapper.m_GunShootActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_GunShootActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public GunShootActions @GunShoot => new GunShootActions(this);
+
+    // SwordSwingAttack
+    private readonly InputActionMap m_SwordSwingAttack;
+    private List<ISwordSwingAttackActions> m_SwordSwingAttackActionsCallbackInterfaces = new List<ISwordSwingAttackActions>();
+    private readonly InputAction m_SwordSwingAttack_ToAttack;
+    public struct SwordSwingAttackActions
+    {
+        private @Input m_Wrapper;
+        public SwordSwingAttackActions(@Input wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ToAttack => m_Wrapper.m_SwordSwingAttack_ToAttack;
+        public InputActionMap Get() { return m_Wrapper.m_SwordSwingAttack; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(SwordSwingAttackActions set) { return set.Get(); }
+        public void AddCallbacks(ISwordSwingAttackActions instance)
+        {
+            if (instance == null || m_Wrapper.m_SwordSwingAttackActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_SwordSwingAttackActionsCallbackInterfaces.Add(instance);
+            @ToAttack.started += instance.OnToAttack;
+            @ToAttack.performed += instance.OnToAttack;
+            @ToAttack.canceled += instance.OnToAttack;
+        }
+
+        private void UnregisterCallbacks(ISwordSwingAttackActions instance)
+        {
+            @ToAttack.started -= instance.OnToAttack;
+            @ToAttack.performed -= instance.OnToAttack;
+            @ToAttack.canceled -= instance.OnToAttack;
+        }
+
+        public void RemoveCallbacks(ISwordSwingAttackActions instance)
+        {
+            if (m_Wrapper.m_SwordSwingAttackActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ISwordSwingAttackActions instance)
+        {
+            foreach (var item in m_Wrapper.m_SwordSwingAttackActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_SwordSwingAttackActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public SwordSwingAttackActions @SwordSwingAttack => new SwordSwingAttackActions(this);
+
+    // Inventory
+    private readonly InputActionMap m_Inventory;
+    private List<IInventoryActions> m_InventoryActionsCallbackInterfaces = new List<IInventoryActions>();
+    private readonly InputAction m_Inventory_OpenCloseInventory;
+    public struct InventoryActions
+    {
+        private @Input m_Wrapper;
+        public InventoryActions(@Input wrapper) { m_Wrapper = wrapper; }
+        public InputAction @OpenCloseInventory => m_Wrapper.m_Inventory_OpenCloseInventory;
+        public InputActionMap Get() { return m_Wrapper.m_Inventory; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InventoryActions set) { return set.Get(); }
+        public void AddCallbacks(IInventoryActions instance)
+        {
+            if (instance == null || m_Wrapper.m_InventoryActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Add(instance);
+            @OpenCloseInventory.started += instance.OnOpenCloseInventory;
+            @OpenCloseInventory.performed += instance.OnOpenCloseInventory;
+            @OpenCloseInventory.canceled += instance.OnOpenCloseInventory;
+        }
+
+        private void UnregisterCallbacks(IInventoryActions instance)
+        {
+            @OpenCloseInventory.started -= instance.OnOpenCloseInventory;
+            @OpenCloseInventory.performed -= instance.OnOpenCloseInventory;
+            @OpenCloseInventory.canceled -= instance.OnOpenCloseInventory;
+        }
+
+        public void RemoveCallbacks(IInventoryActions instance)
+        {
+            if (m_Wrapper.m_InventoryActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IInventoryActions instance)
+        {
+            foreach (var item in m_Wrapper.m_InventoryActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_InventoryActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public InventoryActions @Inventory => new InventoryActions(this);
+
+    // QuickSwitch
+    private readonly InputActionMap m_QuickSwitch;
+    private List<IQuickSwitchActions> m_QuickSwitchActionsCallbackInterfaces = new List<IQuickSwitchActions>();
+    private readonly InputAction m_QuickSwitch_SwitchOne;
+    private readonly InputAction m_QuickSwitch_SwitchTwo;
+    private readonly InputAction m_QuickSwitch_SwitchThree;
+    private readonly InputAction m_QuickSwitch_SwitchFour;
+    private readonly InputAction m_QuickSwitch_SwitchFive;
+    private readonly InputAction m_QuickSwitch_SwitchSix;
+    public struct QuickSwitchActions
+    {
+        private @Input m_Wrapper;
+        public QuickSwitchActions(@Input wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SwitchOne => m_Wrapper.m_QuickSwitch_SwitchOne;
+        public InputAction @SwitchTwo => m_Wrapper.m_QuickSwitch_SwitchTwo;
+        public InputAction @SwitchThree => m_Wrapper.m_QuickSwitch_SwitchThree;
+        public InputAction @SwitchFour => m_Wrapper.m_QuickSwitch_SwitchFour;
+        public InputAction @SwitchFive => m_Wrapper.m_QuickSwitch_SwitchFive;
+        public InputAction @SwitchSix => m_Wrapper.m_QuickSwitch_SwitchSix;
+        public InputActionMap Get() { return m_Wrapper.m_QuickSwitch; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(QuickSwitchActions set) { return set.Get(); }
+        public void AddCallbacks(IQuickSwitchActions instance)
+        {
+            if (instance == null || m_Wrapper.m_QuickSwitchActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_QuickSwitchActionsCallbackInterfaces.Add(instance);
+            @SwitchOne.started += instance.OnSwitchOne;
+            @SwitchOne.performed += instance.OnSwitchOne;
+            @SwitchOne.canceled += instance.OnSwitchOne;
+            @SwitchTwo.started += instance.OnSwitchTwo;
+            @SwitchTwo.performed += instance.OnSwitchTwo;
+            @SwitchTwo.canceled += instance.OnSwitchTwo;
+            @SwitchThree.started += instance.OnSwitchThree;
+            @SwitchThree.performed += instance.OnSwitchThree;
+            @SwitchThree.canceled += instance.OnSwitchThree;
+            @SwitchFour.started += instance.OnSwitchFour;
+            @SwitchFour.performed += instance.OnSwitchFour;
+            @SwitchFour.canceled += instance.OnSwitchFour;
+            @SwitchFive.started += instance.OnSwitchFive;
+            @SwitchFive.performed += instance.OnSwitchFive;
+            @SwitchFive.canceled += instance.OnSwitchFive;
+            @SwitchSix.started += instance.OnSwitchSix;
+            @SwitchSix.performed += instance.OnSwitchSix;
+            @SwitchSix.canceled += instance.OnSwitchSix;
+        }
+
+        private void UnregisterCallbacks(IQuickSwitchActions instance)
+        {
+            @SwitchOne.started -= instance.OnSwitchOne;
+            @SwitchOne.performed -= instance.OnSwitchOne;
+            @SwitchOne.canceled -= instance.OnSwitchOne;
+            @SwitchTwo.started -= instance.OnSwitchTwo;
+            @SwitchTwo.performed -= instance.OnSwitchTwo;
+            @SwitchTwo.canceled -= instance.OnSwitchTwo;
+            @SwitchThree.started -= instance.OnSwitchThree;
+            @SwitchThree.performed -= instance.OnSwitchThree;
+            @SwitchThree.canceled -= instance.OnSwitchThree;
+            @SwitchFour.started -= instance.OnSwitchFour;
+            @SwitchFour.performed -= instance.OnSwitchFour;
+            @SwitchFour.canceled -= instance.OnSwitchFour;
+            @SwitchFive.started -= instance.OnSwitchFive;
+            @SwitchFive.performed -= instance.OnSwitchFive;
+            @SwitchFive.canceled -= instance.OnSwitchFive;
+            @SwitchSix.started -= instance.OnSwitchSix;
+            @SwitchSix.performed -= instance.OnSwitchSix;
+            @SwitchSix.canceled -= instance.OnSwitchSix;
+        }
+
+        public void RemoveCallbacks(IQuickSwitchActions instance)
+        {
+            if (m_Wrapper.m_QuickSwitchActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IQuickSwitchActions instance)
+        {
+            foreach (var item in m_Wrapper.m_QuickSwitchActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_QuickSwitchActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public QuickSwitchActions @QuickSwitch => new QuickSwitchActions(this);
+
+    // OpenChest
+    private readonly InputActionMap m_OpenChest;
+    private List<IOpenChestActions> m_OpenChestActionsCallbackInterfaces = new List<IOpenChestActions>();
+    private readonly InputAction m_OpenChest_Open;
+    public struct OpenChestActions
+    {
+        private @Input m_Wrapper;
+        public OpenChestActions(@Input wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Open => m_Wrapper.m_OpenChest_Open;
+        public InputActionMap Get() { return m_Wrapper.m_OpenChest; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(OpenChestActions set) { return set.Get(); }
+        public void AddCallbacks(IOpenChestActions instance)
+        {
+            if (instance == null || m_Wrapper.m_OpenChestActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_OpenChestActionsCallbackInterfaces.Add(instance);
+            @Open.started += instance.OnOpen;
+            @Open.performed += instance.OnOpen;
+            @Open.canceled += instance.OnOpen;
+        }
+
+        private void UnregisterCallbacks(IOpenChestActions instance)
+        {
+            @Open.started -= instance.OnOpen;
+            @Open.performed -= instance.OnOpen;
+            @Open.canceled -= instance.OnOpen;
+        }
+
+        public void RemoveCallbacks(IOpenChestActions instance)
+        {
+            if (m_Wrapper.m_OpenChestActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IOpenChestActions instance)
+        {
+            foreach (var item in m_Wrapper.m_OpenChestActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_OpenChestActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public OpenChestActions @OpenChest => new OpenChestActions(this);
+
+    // Pause
+    private readonly InputActionMap m_Pause;
+    private List<IPauseActions> m_PauseActionsCallbackInterfaces = new List<IPauseActions>();
+    private readonly InputAction m_Pause_Pause;
+    private readonly InputAction m_Pause_Reset;
+    private readonly InputAction m_Pause_Start;
+    private readonly InputAction m_Pause_increaseDifficultyAction;
+    private readonly InputAction m_Pause_decreaseDifficultyAction;
+    public struct PauseActions
+    {
+        private @Input m_Wrapper;
+        public PauseActions(@Input wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Pause => m_Wrapper.m_Pause_Pause;
+        public InputAction @Reset => m_Wrapper.m_Pause_Reset;
+        public InputAction @Start => m_Wrapper.m_Pause_Start;
+        public InputAction @increaseDifficultyAction => m_Wrapper.m_Pause_increaseDifficultyAction;
+        public InputAction @decreaseDifficultyAction => m_Wrapper.m_Pause_decreaseDifficultyAction;
+        public InputActionMap Get() { return m_Wrapper.m_Pause; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PauseActions set) { return set.Get(); }
+        public void AddCallbacks(IPauseActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PauseActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PauseActionsCallbackInterfaces.Add(instance);
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
+            @Reset.started += instance.OnReset;
+            @Reset.performed += instance.OnReset;
+            @Reset.canceled += instance.OnReset;
+            @Start.started += instance.OnStart;
+            @Start.performed += instance.OnStart;
+            @Start.canceled += instance.OnStart;
+            @increaseDifficultyAction.started += instance.OnIncreaseDifficultyAction;
+            @increaseDifficultyAction.performed += instance.OnIncreaseDifficultyAction;
+            @increaseDifficultyAction.canceled += instance.OnIncreaseDifficultyAction;
+            @decreaseDifficultyAction.started += instance.OnDecreaseDifficultyAction;
+            @decreaseDifficultyAction.performed += instance.OnDecreaseDifficultyAction;
+            @decreaseDifficultyAction.canceled += instance.OnDecreaseDifficultyAction;
+        }
+
+        private void UnregisterCallbacks(IPauseActions instance)
+        {
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
+            @Reset.started -= instance.OnReset;
+            @Reset.performed -= instance.OnReset;
+            @Reset.canceled -= instance.OnReset;
+            @Start.started -= instance.OnStart;
+            @Start.performed -= instance.OnStart;
+            @Start.canceled -= instance.OnStart;
+            @increaseDifficultyAction.started -= instance.OnIncreaseDifficultyAction;
+            @increaseDifficultyAction.performed -= instance.OnIncreaseDifficultyAction;
+            @increaseDifficultyAction.canceled -= instance.OnIncreaseDifficultyAction;
+            @decreaseDifficultyAction.started -= instance.OnDecreaseDifficultyAction;
+            @decreaseDifficultyAction.performed -= instance.OnDecreaseDifficultyAction;
+            @decreaseDifficultyAction.canceled -= instance.OnDecreaseDifficultyAction;
+        }
+
+        public void RemoveCallbacks(IPauseActions instance)
+        {
+            if (m_Wrapper.m_PauseActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPauseActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PauseActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PauseActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PauseActions @Pause => new PauseActions(this);
     public interface IMovementActions
     {
         void OnMoveX(InputAction.CallbackContext context);
         void OnMoveZ(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnRun(InputAction.CallbackContext context);
     }
     public interface ILookActions
     {
         void OnMouseX_Axis(InputAction.CallbackContext context);
         void OnMouseY_Axis(InputAction.CallbackContext context);
+    }
+    public interface IGunShootActions
+    {
+        void OnShoot(InputAction.CallbackContext context);
+    }
+    public interface ISwordSwingAttackActions
+    {
+        void OnToAttack(InputAction.CallbackContext context);
+    }
+    public interface IInventoryActions
+    {
+        void OnOpenCloseInventory(InputAction.CallbackContext context);
+    }
+    public interface IQuickSwitchActions
+    {
+        void OnSwitchOne(InputAction.CallbackContext context);
+        void OnSwitchTwo(InputAction.CallbackContext context);
+        void OnSwitchThree(InputAction.CallbackContext context);
+        void OnSwitchFour(InputAction.CallbackContext context);
+        void OnSwitchFive(InputAction.CallbackContext context);
+        void OnSwitchSix(InputAction.CallbackContext context);
+    }
+    public interface IOpenChestActions
+    {
+        void OnOpen(InputAction.CallbackContext context);
+    }
+    public interface IPauseActions
+    {
+        void OnPause(InputAction.CallbackContext context);
+        void OnReset(InputAction.CallbackContext context);
+        void OnStart(InputAction.CallbackContext context);
+        void OnIncreaseDifficultyAction(InputAction.CallbackContext context);
+        void OnDecreaseDifficultyAction(InputAction.CallbackContext context);
     }
 }
