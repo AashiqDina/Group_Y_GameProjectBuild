@@ -8521,11 +8521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647468725699361933, guid: 9a2d84ceba581dd4daea1f420c4aa0e9, type: 3}
       propertyPath: BaseSpeed
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1647468725699361933, guid: 9a2d84ceba581dd4daea1f420c4aa0e9, type: 3}
       propertyPath: JumpStrength
-      value: 40
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2026427634337962901, guid: 9a2d84ceba581dd4daea1f420c4aa0e9, type: 3}
       propertyPath: m_LocalScale.x
@@ -11427,10 +11427,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 50
-  m_Acceleration: 200
+  m_Speed: 12.5
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 100
+  m_AngularSpeed: 25
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -14118,8 +14118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 10
-  DamageRate: 0
+  enemydamage: 5
+  DamageRate: 1
 --- !u!1 &587215275
 GameObject:
   m_ObjectHideFlags: 0
@@ -15070,10 +15070,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 50
-  m_Acceleration: 200
+  m_Speed: 12.5
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 100
+  m_AngularSpeed: 25
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -21009,10 +21009,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 50
-  m_Acceleration: 200
+  m_Speed: 12.5
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 100
+  m_AngularSpeed: 25
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -32210,10 +32210,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 50
-  m_Acceleration: 200
+  m_Speed: 12.5
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 100
+  m_AngularSpeed: 25
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -41435,15 +41435,15 @@ PrefabInstance:
       objectReference: {fileID: 1635408201}
     - target: {fileID: 2382702820881792311, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_Speed
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2382702820881792311, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_Acceleration
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2382702820881792311, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_AngularSpeed
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3403441376985695599, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_LocalScale.x
@@ -46150,10 +46150,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 50
-  m_Acceleration: 200
+  m_Speed: 12.5
+  m_Acceleration: 50
   avoidancePriority: 50
-  m_AngularSpeed: 100
+  m_AngularSpeed: 25
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
