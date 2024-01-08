@@ -12,7 +12,6 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && !CanDamage())
         {
-            double actualDamage = enemydamage * DifficultyManager.Instance.GetDamageBasedOnDifficulty();
             enemydamage = 0;
         }
 

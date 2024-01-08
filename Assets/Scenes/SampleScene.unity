@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2041,7 +2041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &57006257
 MonoBehaviour:
@@ -4103,7 +4103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &170131723
 MonoBehaviour:
@@ -8521,11 +8521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1647468725699361933, guid: 9a2d84ceba581dd4daea1f420c4aa0e9, type: 3}
       propertyPath: BaseSpeed
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1647468725699361933, guid: 9a2d84ceba581dd4daea1f420c4aa0e9, type: 3}
       propertyPath: JumpStrength
-      value: 250
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2026427634337962901, guid: 9a2d84ceba581dd4daea1f420c4aa0e9, type: 3}
       propertyPath: m_LocalScale.x
@@ -10802,7 +10802,6 @@ MonoBehaviour:
   bossSpawnPoint: {fileID: 363994089}
   BossHealthBar: {fileID: 1142084823}
   Orb: {fileID: 1114428525}
-  Damage: 10
   maxhealth: 300
 --- !u!114 &423943517
 MonoBehaviour:
@@ -10816,8 +10815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
-  DamageRate: 0
+  enemydamage: 1
+  DamageRate: 1
 --- !u!1 &430743732
 GameObject:
   m_ObjectHideFlags: 0
@@ -11366,8 +11365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 10
-  DamageRate: 0
+  enemydamage: 1
+  DamageRate: 1
 --- !u!114 &444243323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11395,7 +11394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344024aaee4036249a02d3e9a4878f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 1
 --- !u!65 &444243325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11427,10 +11426,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12.5
-  m_Acceleration: 50
+  m_Speed: 50
+  m_Acceleration: 200
   avoidancePriority: 50
-  m_AngularSpeed: 25
+  m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -11761,7 +11760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &458191404
 MonoBehaviour:
@@ -13239,7 +13238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &530906009
 MonoBehaviour:
@@ -13376,7 +13375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &540345207
 MonoBehaviour:
@@ -14118,7 +14117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 5
+  enemydamage: 1
   DamageRate: 1
 --- !u!1 &587215275
 GameObject:
@@ -14783,7 +14782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &612170279
 MonoBehaviour:
@@ -15009,8 +15008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 10
-  DamageRate: 0
+  enemydamage: 1
+  DamageRate: 1
 --- !u!114 &626436522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15038,7 +15037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344024aaee4036249a02d3e9a4878f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 1
 --- !u!65 &626436524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15070,10 +15069,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12.5
-  m_Acceleration: 50
+  m_Speed: 50
+  m_Acceleration: 200
   avoidancePriority: 50
-  m_AngularSpeed: 25
+  m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -15815,7 +15814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &657010800
 MonoBehaviour:
@@ -20343,7 +20342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 1
   DamageRate: 1
 --- !u!114 &838886361
 MonoBehaviour:
@@ -20804,7 +20803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &864252351
 MonoBehaviour:
@@ -20948,8 +20947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 10
-  DamageRate: 0
+  enemydamage: 1
+  DamageRate: 1
 --- !u!114 &879291043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20977,7 +20976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344024aaee4036249a02d3e9a4878f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 1
 --- !u!65 &879291045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21009,10 +21008,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12.5
-  m_Acceleration: 50
+  m_Speed: 50
+  m_Acceleration: 200
   avoidancePriority: 50
-  m_AngularSpeed: 25
+  m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -22758,7 +22757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &1000723261
 MonoBehaviour:
@@ -27751,6 +27750,7 @@ GameObject:
   - component: {fileID: 1268655343}
   - component: {fileID: 1268655342}
   - component: {fileID: 1268655346}
+  - component: {fileID: 1268655347}
   m_Layer: 5
   m_Name: StartScreen
   m_TagString: Untagged
@@ -27906,6 +27906,19 @@ MonoBehaviour:
       m_Action: Decrease Difficulty
       m_Flags: 0
     m_Flags: 0
+--- !u!114 &1268655347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268655341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e151f6ae4a043f1a54c6ada5065ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDifficulty: 0
 --- !u!1001 &1269358407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32149,8 +32162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 10
-  DamageRate: 0
+  enemydamage: 1
+  DamageRate: 1
 --- !u!114 &1508789657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32178,7 +32191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344024aaee4036249a02d3e9a4878f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 1
 --- !u!65 &1508789659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32210,10 +32223,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12.5
-  m_Acceleration: 50
+  m_Speed: 50
+  m_Acceleration: 200
   avoidancePriority: 50
-  m_AngularSpeed: 25
+  m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -34472,7 +34485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &1610563856
 MonoBehaviour:
@@ -35707,7 +35720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 20
+  enemydamage: 2
   DamageRate: 1
 --- !u!114 &1666926762
 MonoBehaviour:
@@ -41435,15 +41448,15 @@ PrefabInstance:
       objectReference: {fileID: 1635408201}
     - target: {fileID: 2382702820881792311, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_Speed
-      value: 25
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2382702820881792311, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_Acceleration
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2382702820881792311, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_AngularSpeed
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3403441376985695599, guid: 88f0ccd7a6d2108478d14acee0b3bf36, type: 3}
       propertyPath: m_LocalScale.x
@@ -46089,8 +46102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c6e95f941e27c4fa9b99f0c343b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydamage: 10
-  DamageRate: 0
+  enemydamage: 1
+  DamageRate: 1
 --- !u!114 &2116603293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46118,7 +46131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344024aaee4036249a02d3e9a4878f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 1
 --- !u!65 &2116603295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46150,10 +46163,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12.5
-  m_Acceleration: 50
+  m_Speed: 50
+  m_Acceleration: 200
   avoidancePriority: 50
-  m_AngularSpeed: 25
+  m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1

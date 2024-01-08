@@ -25,18 +25,18 @@ public class DifficultyManager : MonoBehaviour
         }
     }
 
-    public double GetDamageBasedOnDifficulty()
+    public int GetDamageBasedOnDifficulty()
     {
         switch (currentDifficulty)
         {
             case GameDifficulty.Easy:
-                return 0.5;
+                return 5;
             case GameDifficulty.Medium:
-                return 1.0;
+                return 10;
             case GameDifficulty.Hard:
-                return 2.0;
+                return 15;
             default:
-                return 1.0;
+                return 5;
         }
     }
 
